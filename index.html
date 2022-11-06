@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<center><body<h1><b><u>PEMERIKSAAN HARIAN PEMANDU BAGI KENDERAAN JENIS ‘B’</u></b></h1></center>
+
+<div id="whatToPrint" style="width: 500px;"></div>
+<br></br>
+
+<p></p>
+Tarikh: <script> document.write(new Date().toLocaleDateString()); </script>
+
+<p></p>
+Masa: <span id="datetime"></span>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+</script>
+<p></p>
+<p></p>
+    <div id="whatToPrint"></div>
+    <p><label>MOD Nombor:</label>
+<input> </P>
+
+<p><label>Jenis Kenderaan:</label>
+<input></p>
+
+<p><label>Bacaan Kilometer:</label>
+<input></p>
+<p><label>No/Nama Pemandu:</label>
+<input></p>
+
+
+
+<br></br>
+<br></br>
+<p><label for="SSC"><b><u>1) SISTEM PENYEJUK</u></b></label></p>
+<p>a) Periksa sukatan maksima tangki air/coolant (tambah jika perlu).</p>
+<input type="radio" name="gender" value="BAIK"> BAIK
+<input type="radio" name="gender" value="ROSAK"> ROSAK
+<input type="radio" name="gender" value="VOR"> VOR
+<input type="radio" name="gender" value="CUKUP"> CUKUP
+<input type="radio" name="gender" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>2)	JENTERA/INJIN</u></b></label>
+<P>a) Periksa paras minyak pelincir injin.</P>
+<P>b)Periksa sukatan minyak hydraulic steering
+    (jika mengunakan power steering). 
+    </P>
+<br>
+<input type="radio" name="indoor" value="BAIK"> BAIK
+<input type="radio" name="indoor" value="ROSAK"> ROSAK
+<input type="radio" name="indoor" value="VOR"> VOR
+<input type="radio" name="indoor" value="CUKUP"> CUKUP
+<input type="radio" name="indoor" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>3)	MINYAK BREK DAN CLUTCH</u></b></label>
+<p>a) Periksa sukatan paras minyak brek dan clutch, jalankan ujian brek.</p>
+<p>b) Periksa sebarang kebocoran pada bahagian brek dan clutch.</p>
+<br>
+<input type="radio" name="outdoor" value="BAIK"> BAIK
+<input type="radio" name="outdoor" value="ROSAK"> ROSAK
+<input type="radio" name="outdoor" value="VOR" > VOR
+<input type="radio" name="outdoor" value="CUKUP"> CUKUP
+<input type="radio" name="outdoor" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>4)	BATTERI</u></b></label>
+<p>a) Periksa paras air bateri (tambah jika perlu).</p>
+<p>b) Periksa semua penutup air bateri (seal/getah).</p>
+<br>
+<input type="radio" name="black" value="BAIK"> BAIK
+<input type="radio" name="black" value="ROSAK"> ROSAK
+<input type="radio" name="black" value="VOR" > VOR
+<input type="radio" name="black" value="CUKUP"> CUKUP
+<input type="radio" name="black" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>5)	SISTEM LAMPU/ELEKTRIK</u></b></label>
+<p>a) Periksa keseluruhan lampu lampu pada kenderaan.</p>
+<p>b) Periksa hon.</p>
+<p>c) Periksa pembersih cermin.</p>
+<br>
+<input type="radio" name="white" value="BAIK"> BAIK
+<input type="radio" name="white" value="ROSAK"> ROSAK
+<input type="radio" name="white" value="VOR" > VOR
+<input type="radio" name="white" value="CUKUP"> CUKUP
+<input type="radio" name="white" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>6)	KANOPI</u></b></label>
+<p>a) Pastikan kanopi terpasang rapi dan kemas.</p>
+<p>b) Periksa keadaan tali dan cangkuk kanopi.</p>
+<br>
+<input type="radio" name="yellow" value="BAIK"> BAIK
+<input type="radio" name="yellow" value="ROSAK"> ROSAK
+<input type="radio" name="yellow" value="VOR" > VOR
+<input type="radio" name="yellow" value="CUKUP"> CUKUP
+<input type="radio" name="yellow" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>7)	TAYAR/ALAT PERKAKAS</u></b></label>
+<p>a) Periksa tekanan udara keseluruh tayar
+    termasuk tayar simpanan.
+   </p>
+<p>b) Periksa alat perkakas kenderaan (vehicle tools).</p>
+<br>
+<input type="radio" name="red" value="BAIK"> BAIK
+<input type="radio" name="red" value="ROSAK"> ROSAK
+<input type="radio" name="red" value="VOR" > VOR
+<input type="radio" name="red" value="CUKUP"> CUKUP
+<input type="radio" name="red" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<label for="SSC"><b><u>8)	KEBERSIHAN</u></b></label>
+<p>a)Pastikan kenderaan keseluruhannya dalam keadaan
+    bersih terutama pada cermin utama, dalam cab, cermin tepi 
+   dan cermin pandang belakang.</p>
+<br>
+<input type="radio" name="pink" value="BAIK"> BAIK
+<input type="radio" name="pink" value="ROSAK"> ROSAK
+<input type="radio" name="pink" value="VOR" > VOR
+<input type="radio" name="pink" value="CUKUP"> CUKUP
+<input type="radio" name="pink" value="TIDAK DALAM SENARAI"> TIDAK DALAM SENARAI
+<br></br>
+<br></br>
+<br></br>
+
+
+<P><b>PERINGATAN:</b> Brek angin  (bagi kenderaan yang menggunakan sistem brek angin – air reservoir)</p>
+    <P>a)	Sebelum menghidupkan injin 
+    keluarkan angin daripada tangki (reservoir) untuk mengeluarkan air yang terperangkap di dalamnya.</P>
+    <p>b)	Selepas selesai menggunakan kenderaan 
+    keluarkan angin dalam tangki bagi mengurangkan tekanan angin yang ada di dalam sistem brek.
+    </P>
+
+
+
+
+<!--<img src="https://th.bing.com/th/id/OIP.wdkLi0wAUuLf5gdNFincPwHaEd?pid=ImgDet&rs=1"/>-->
+
+<a href="javascript:generatePDF()" id="downloadButton">Click to download</a>
+
+
+
+
+</div>
+    
+<script>
+    async function generatePDF() {
+        document.getElementById("downloadButton").innerHTML = "Currently downloading, please wait";
+
+        //Downloading
+        var downloading = document.getElementById("whatToPrint");
+        var doc = new jsPDF('l', 'pt');
+
+        await html2canvas(downloading, {
+            //allowTaint: true,
+            //useCORS: true,
+            width: 530
+        }).then((canvas) => {
+            //Canvas (convert to PNG)
+            doc.addImage(canvas.toDataURL("image/png"), 'PNG', 5, 5, 500, 200);
+        })
+
+        doc.save("Document.pdf");
+
+        //End of downloading
+
+        document.getElementById("downloadButton").innerHTML = "Click to download";
+    }
+</script>
+</body>
+</html>
+
+<br></br>
+<br></br>
+<br></br>
+<!--
+
+HTML + CSS -> PNG (html2canvas)
+PNG -> Add to PDF (jsPDF)
+Download PDF (jsPDF)
+
+-->
